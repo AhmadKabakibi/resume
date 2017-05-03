@@ -79,6 +79,38 @@
 }
 
 
+
+/*BUTTON*/
+.btn {
+    border-none: none;
+    border-radius: 0;
+    padding: 17px 41.5px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-indent: 3px;
+}
+
+.btn.btn-default{
+    border: solid 2px #578fcb;
+    background-color: #578fcb;
+    margin: 0.6em;
+    padding: 0.7em;
+}
+
+.btn-default:hover{
+    background-color: #fff;
+    color: #000;
+}
+.link {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    margin: 0;
+    padding: 0;
+}
+
 section {
 	border-top: 1px solid #dedede;
 	padding: 20px 0 0;
@@ -122,6 +154,13 @@ section:last-child {
 	margin-bottom: -2px;
 }
 
+.sectionContent h3 {
+	font-family: 'Rokkitt', Helvetica, Arial, sans-serif;
+	font-size: 1.2em;
+	margin-bottom: -2px;
+}
+
+
 .subDetails {
 	font-size: 0.8em;
 	font-style: italic;
@@ -134,7 +173,7 @@ section:last-child {
 	-webkit-column-count:3;
 	column-count:3;
 	margin-bottom: 20px;
-	font-size: 1em;
+	font-size: 0.89em !important;
 	color: #444;
 }
 
