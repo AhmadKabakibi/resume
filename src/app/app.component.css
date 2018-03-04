@@ -29,16 +29,16 @@
 }
 
 #headshot {
-	width: 12.5%;
 	float: left;
 	margin-right: 30px;
 }
 
 #headshot img {
-	width: 100%;
-	height: auto;
-	-webkit-border-radius: 50px;
-	border-radius: 50px;
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+    display: block;
+    max-width: 100%;
+    height: auto;
 }
 
 #name {
@@ -191,7 +191,7 @@ section:last-child {
 
 @media all and (min-width: 602px) and (max-width: 800px) {
 	#headshot {
-		display: none;
+		float: none;
 	}
 	
 	.keySkills {
@@ -209,13 +209,12 @@ section:last-child {
 	}
 	
 	#headshot {
-		display: none;
+		float: none;
 	}
 	
 	#name, #contactDetails {
 		float: none;
 		width: 100%;
-		text-align: center;
 	}
 	
 	.sectionTitle, .sectionContent {
