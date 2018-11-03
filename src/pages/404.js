@@ -1,5 +1,7 @@
+/*eslint-disable no-unused-vars*/
 import React from 'react'
 import Layout from '../components/layout'
+/*eslint-disable no-unused-vars*/
 
 const NotFoundPage = () => (
   <Layout>
