@@ -1,7 +1,9 @@
+/*eslint-disable no-unused-vars*/
 import React from 'react'
 import { Link } from 'gatsby'
 
 import Layout from '../components/layout'
+/*eslint-disable no-unused-vars*/
 
 const SecondPage = () => (
   <Layout>

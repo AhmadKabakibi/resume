@@ -1,5 +1,7 @@
+/*eslint-disable no-unused-vars*/
 import React from 'react'
 import { Link } from 'gatsby'
+/*eslint-disable no-unused-vars*/
 
 const Header = ({ siteTitle }) => (
   <div
