@@ -1,13 +1,19 @@
 {
   "env": {
-    "jest": true
+    "jest": true,
+    "browser": true
   },
-  "extends": ["standard", "eslint:recommended", "prettier"],
+  "extends": [
+    "eslint:recommended",
+    "standard",
+    "plugin:react/recommended",
+    "prettier"
+  ],
   "parser": "babel-eslint",
   "parserOptions": {
     "ecmaVersion": 2017
   },
-  "plugins": ["prettier"],
+  "plugins": ["react", "prettier"],
   "rules": {
     "prettier/prettier": "error",
     "no-console": [
@@ -16,6 +22,7 @@
         "allow": ["info", "warn", "error"]
       }
     ],
-    "eol-last": ["error", "always"]
+    "eol-last": ["error", "always"],
+    "react/prop-types": 0
   }
 }
