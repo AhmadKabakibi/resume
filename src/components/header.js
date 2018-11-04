@@ -1,7 +1,6 @@
-/*eslint-disable no-unused-vars*/
 import React from 'react'
 import { Link } from 'gatsby'
-/*eslint-disable no-unused-vars*/
+import PropTypes from 'prop-types'
 
 const Header = ({ siteTitle }) => (
   <div
@@ -31,5 +30,9 @@ const Header = ({ siteTitle }) => (
     </div>
   </div>
 )
+
+Header.PropTypes = {
+  siteTitle: PropTypes.string.isRequired,
+}
 
 export default Header

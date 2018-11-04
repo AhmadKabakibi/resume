@@ -1,8 +1,6 @@
-/*eslint-disable no-unused-vars*/
 import React from 'react'
 import { StaticQuery, graphql } from 'gatsby'
 import Img from 'gatsby-image'
-/*eslint-disable no-unused-vars*/
 
 /*
  * This component is built using `gatsby-image` to automatically serve optimized
