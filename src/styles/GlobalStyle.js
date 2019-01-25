@@ -22,7 +22,7 @@ const GlobalStyle = createGlobalStyle`
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
     background-color: ${theme.colors.navy};
-    color: ${theme.colors.offWhite};
+    color: ${theme.colors.white};
     line-height: 1.5;
     font-family: ${theme.fonts.Helvetica};
     font-size: ${theme.fontSizes.xlarge};

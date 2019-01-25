@@ -4,7 +4,8 @@ import PropTypes from 'prop-types'
 
 import Layout from '../components/layout'
 import About from '../components/about'
-import Contact from '../components/Contact'
+import Job from '../components/job'
+import Contact from '../components/contact'
 
 import styled from 'styled-components'
 import { mixins, Main } from '../styles'
@@ -19,6 +20,7 @@ const IndexPage = ({ data, location }) => {
     <Layout location={location}>
       <MainContainer id="content">
         <About data={data.about.edges} />
+        <Job data={data.jobs.edges} />
         <Contact data={data.contact.edges} />
       </MainContainer>
     </Layout>
@@ -66,6 +68,23 @@ export const query = graphql`
               }
             }
             skills
+          }
+          html
+        }
+      }
+    }
+    jobs: allMarkdownRemark(
+      filter: { fileAbsolutePath: { regex: "/jobs/" } }
+      sort: { fields: [frontmatter___date], order: DESC }
+    ) {
+      edges {
+        node {
+          frontmatter {
+            title
+            company
+            location
+            range
+            url
           }
           html
         }
