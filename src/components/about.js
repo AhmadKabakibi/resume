@@ -95,7 +95,6 @@ const PicContainer = styled.div`
 `
 const Avatar = styled(Img)`
   position: relative;
-  mix-blend-mode: normal;
   filter: none;
   border-radius: ${theme.borderRadius};
   transition: ${theme.transition};
@@ -115,7 +114,6 @@ const AvatarContainer = styled.div`
     }
     ${Avatar} {
       filter: none;
-      mix-blend-mode: normal;
     }
   }
   &:before,
@@ -134,7 +132,6 @@ const AvatarContainer = styled.div`
     right: 0;
     bottom: 0;
     background-color: ${theme.colors.navy};
-    mix-blend-mode: screen;
   }
   &:after {
     border: 2px solid ${theme.colors.green};
