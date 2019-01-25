@@ -7,7 +7,7 @@ import { Link } from 'gatsby'
 import { throttle } from '../utils'
 
 import { headerHeight } from '../config'
-import resume from '../../data/Resume-a.kabakibi.pdf'
+import resume from '../content/Resume-a.kabakibi.pdf'
 
 import Menu from '../components/menu'
 import IconLogo from '../images/logo'
