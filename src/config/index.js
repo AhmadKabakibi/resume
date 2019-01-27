@@ -27,6 +27,18 @@ module.exports = {
       name: 'About',
       url: '#about',
     },
+    {
+      name: 'Experience',
+      url: '#jobs',
+    },
+    {
+      name: 'Projects',
+      url: '#projectCase',
+    },
+    {
+      name: 'Contact',
+      url: '#contact',
+    },
   ],
 
   srConfig: (delay = 200) => {

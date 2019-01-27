@@ -5,6 +5,7 @@ import PropTypes from 'prop-types'
 import Layout from '../components/layout'
 import About from '../components/about'
 import Job from '../components/job'
+import ProjectCase from '../components/projectCase'
 import Contact from '../components/contact'
 
 import styled from 'styled-components'
@@ -21,6 +22,7 @@ const IndexPage = ({ data, location }) => {
       <MainContainer id="content">
         <About data={data.about.edges} />
         <Job data={data.jobs.edges} />
+        <ProjectCase data={data.projectCases.edges} />
         <Contact data={data.contact.edges} />
       </MainContainer>
     </Layout>
@@ -36,19 +38,6 @@ export default IndexPage
 
 export const query = graphql`
   query IndexQuery {
-    bio: allMarkdownRemark(filter: { fileAbsolutePath: { regex: "/bio/" } }) {
-      edges {
-        node {
-          frontmatter {
-            title
-            name
-            subtitle
-            contactText
-          }
-          html
-        }
-      }
-    }
     about: allMarkdownRemark(
       filter: { fileAbsolutePath: { regex: "/about/" } }
     ) {
@@ -97,6 +86,35 @@ export const query = graphql`
         node {
           frontmatter {
             title
+          }
+          html
+        }
+      }
+    }
+    projectCases: allMarkdownRemark(
+      filter: { fileAbsolutePath: { regex: "/projectCases/" } }
+      sort: { fields: [frontmatter___date], order: DESC }
+    ) {
+      edges {
+        node {
+          frontmatter {
+            title
+            cover {
+              childImageSharp {
+                fluid(
+                  maxWidth: 700
+                  quality: 90
+                  traceSVG: { color: "#64ffda" }
+                ) {
+                  ...GatsbyImageSharpFluid_withWebp_tracedSVG
+                }
+              }
+            }
+            tech
+            github
+            external
+            appstore
+            playstore
           }
           html
         }
