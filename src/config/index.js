@@ -7,6 +7,8 @@ module.exports = {
   description: '',
   Language: 'en_US',
   email: 'ahmadkbakibi@gmail.com',
+  googleAnalyticsID: 'UA-97011977-1',
+  googleVerification: 'R2QNBj6YqmoSgaBMSPwNvuH5BU7snbjhbzcFBdn7uTE',
   socialMedia: [
     {
       name: 'Github',
