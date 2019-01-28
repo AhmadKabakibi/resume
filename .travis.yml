@@ -7,3 +7,6 @@ cache:
 script:
   - npm run lint
   - npm run build
+
+after_success:
+  - npm run lh -- https://akabakibi.com/
