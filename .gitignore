@@ -8,3 +8,4 @@ yarn-error.log
 /data
 .DS_Store
 .vscode/
+*.html

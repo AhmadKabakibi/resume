@@ -16,6 +16,7 @@
     "test:coverage": "npm run test -- --coverage",
     "test:coverage:watch": "npm run test -- --coverage --watchAll",
     "lint": "eslint \"src/**/*.js\"",
+    "lighthouse": "node_modules/.bin/lighthouse https://akabakibi.com/",
     "precommit": "npm run lint"
   },
   "repository": {
@@ -41,6 +42,7 @@
     "gatsby-source-filesystem": "2.0.4",
     "gatsby-transformer-remark": "2.1.12",
     "gatsby-transformer-sharp": "2.1.4",
+    "lighthouse": "^4.0.0",
     "prop-types": "15.6.2",
     "react": "16.5.2",
     "react-anchor-link-smooth-scroll": "1.0.11",
