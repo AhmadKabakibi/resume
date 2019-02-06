@@ -7,7 +7,6 @@ import { Link } from 'gatsby'
 import { throttle } from '../utils'
 
 import { headerHeight } from '../config'
-import resume from '../content/Resume-a.kabakibi.pdf'
 
 import Menu from '../components/menu'
 import IconLogo from '../images/logo'
@@ -167,7 +166,7 @@ class Header extends Component {
                 <CSSTransition classNames="fadedown" timeout={3000}>
                   <ResumeButton style={{ transitionDelay: `600ms` }}>
                     <ResumeLink
-                      href={resume}
+                      href="https://drive.google.com/file/d/1yIfwGkm0z7JJ_I9jIxp7HVYCJ48mzAeJ/view"
                       target="_blank"
                       rel="nofollow noopener noreferrer"
                     >
