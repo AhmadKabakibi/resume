@@ -2,8 +2,6 @@ import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import AnchorLink from 'react-anchor-link-smooth-scroll'
 
-import resume from '../content/Resume-a.kabakibi.pdf'
-
 import styled from 'styled-components'
 import { theme, mixins, media, Nav } from '../styles'
 
@@ -38,7 +36,7 @@ class Menu extends Component {
               </NavList>
             )}
             <ResumeLink
-              href={resume}
+              href="https://drive.google.com/file/d/1yIfwGkm0z7JJ_I9jIxp7HVYCJ48mzAeJ/view"
               target="_blank"
               rel="nofollow noopener noreferrer"
             >
