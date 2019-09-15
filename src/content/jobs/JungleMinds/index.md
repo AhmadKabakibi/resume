@@ -3,7 +3,7 @@ date: '2018-10-01'
 title: 'Full Stack Engineer'
 company: 'JungleMinds'
 location: 'Amsterdam'
-range: 'present - October 2018'
+range: 'October 2018 - February 2019'
 url: 'https://www.jungleminds.com'
 ---
 
