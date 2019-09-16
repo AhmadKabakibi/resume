@@ -166,7 +166,7 @@ class Header extends Component {
                 <CSSTransition classNames="fadedown" timeout={3000}>
                   <ResumeButton style={{ transitionDelay: `600ms` }}>
                     <ResumeLink
-                      href="https://drive.google.com/file/d/1yIfwGkm0z7JJ_I9jIxp7HVYCJ48mzAeJ/view"
+                      href="https://drive.google.com/file/d/1QVsPUjGFyJ0cUu-WGM2-HnrkRHfwl0JB/view"
                       target="_blank"
                       rel="nofollow noopener noreferrer"
                     >

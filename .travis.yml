@@ -1,9 +1,10 @@
 language: node_js
-node_js:
-  - 'stable'
-cache:
-  directories:
-    - node_modules
+
+install:
+  - npm install
+  # I don't want changes to package-lock.json to show up as local git
+  - git checkout package-lock.json
+
 script:
   - npm run lint
   - npm run build
