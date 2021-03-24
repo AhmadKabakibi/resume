@@ -1,7 +1,9 @@
 language: node_js
 
 install:
-  - yarn install --ignore-optional --ignore-scripts
+  - yarn --frozen-lockfile
+
+cache: yarn
 
 script:
   - yarn lint
