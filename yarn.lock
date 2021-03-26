@@ -8428,23 +8428,23 @@ gatsby-plugin-robots-txt@1.5.5:
     "@babel/runtime" "^7.11.2"
     generate-robotstxt "^8.0.3"
 
-gatsby-plugin-sharp@2.14.3:
-  version "2.14.3"
-  resolved "https://registry.npmjs.org/gatsby-plugin-sharp/-/gatsby-plugin-sharp-2.14.3.tgz#80970bd9604cdbb0005a222fb61bcd0e093e1a23"
-  integrity sha512-cUzaRA9DE6VzUREStNIy3gFujUefwlPmqumHm8YJGJspW9x8jxNBTXh2kc7tR8GqINFXneoEY4ywnR1WiWB7fA==
+gatsby-plugin-sharp@3.1.2:
+  version "3.1.2"
+  resolved "https://registry.npmjs.org/gatsby-plugin-sharp/-/gatsby-plugin-sharp-3.1.2.tgz#fd14aa7d729c3a8b8770321c91f33ad59f404185"
+  integrity sha512-YH4vd9u18Z0x/iiPqiyDpd8CQP7N7gN1LvvGydtch34sWijdQcCBP/kiZk+hn1iXCvVG4vxLt2DvkY4LaWGUpA==
   dependencies:
     "@babel/runtime" "^7.12.5"
     async "^3.2.0"
     bluebird "^3.7.2"
     filenamify "^4.2.0"
     fs-extra "^9.1.0"
-    gatsby-core-utils "^1.10.1"
-    gatsby-telemetry "^1.10.1"
+    gatsby-core-utils "^2.1.0"
+    gatsby-telemetry "^2.1.0"
     got "^10.7.0"
     imagemin "^7.0.1"
     imagemin-mozjpeg "^9.0.0"
     imagemin-pngquant "^9.0.1"
-    lodash "^4.17.20"
+    lodash "^4.17.21"
     mini-svg-data-uri "^1.2.3"
     potrace "^2.1.8"
     probe-image-size "^6.0.0"
@@ -8702,7 +8702,7 @@ gatsby-telemetry@^1.10.1:
 
 gatsby-telemetry@^2.1.0:
   version "2.1.0"
-  resolved "https://registry.yarnpkg.com/gatsby-telemetry/-/gatsby-telemetry-2.1.0.tgz#e7c0f8bc488a93bf4afcd10760f38b50471e754f"
+  resolved "https://registry.npmjs.org/gatsby-telemetry/-/gatsby-telemetry-2.1.0.tgz#e7c0f8bc488a93bf4afcd10760f38b50471e754f"
   integrity sha512-ZAmjxYsLyJ9eK3ZGphoIjl1C/Mx732h+PWpyD+NNUPf+GFJcPDVAd/tX9XHjNTVrAN3rAaHuH48wK7JNeC/xIA==
   dependencies:
     "@babel/code-frame" "^7.10.4"
