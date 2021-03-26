@@ -12,7 +12,7 @@ skills:
   - AI
 ---
 
-Hey, I'm Ahmad Kabakibi a senior software engineer, 29 years old specialized in Full-stack web and mobile development from testing, prototyping, developer tooling, CI/CD, version control over 8 years experience and awesome tech skills<br>
+Hey, I am Ahmad Kabakibi. I am a senior software engineer, 29 years old and specialized in Full-stack web and mobile development. I have over 8 years experience with testing, prototyping, developer tooling, CI/CD, version control and awesome tech skills.<br>
 
 My latest experiences include React and Typescript and its ecosystem (testing library, saga, redux, storybook, cypress, jest) and microservices architecture, hybrid mobile development, clean code, and design patterns.<br>
 
