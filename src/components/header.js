@@ -75,7 +75,7 @@ class Header extends Component {
     }
   }
 
-  handleKeydown = evt => {
+  handleKeydown = (evt) => {
     const { menuOpen } = this.state
 
     if (!menuOpen) {
@@ -89,7 +89,7 @@ class Header extends Component {
 
   toggleMenu = () => this.setState({ menuOpen: !this.state.menuOpen })
 
-  handleMenuClick = e => {
+  handleMenuClick = (e) => {
     const target = e.target
     const isLink = target.hasAttribute('href')
     const isContainer =
@@ -107,7 +107,7 @@ class Header extends Component {
 
     return (
       <HeaderContainer
-        ref={el => (this.header = el)}
+        ref={(el) => (this.header = el)}
         scrollDirection={scrollDirection}
       >
         <Helmet>
@@ -183,7 +183,7 @@ class Header extends Component {
           isHome={isHome}
           navLinks={navLinks}
           menuOpen={menuOpen}
-          handleMenuClick={e => this.handleMenuClick(e)}
+          handleMenuClick={(e) => this.handleMenuClick(e)}
         />
       </HeaderContainer>
     )
@@ -204,16 +204,16 @@ const HeaderContainer = styled.header`
   pointer-events: auto !important;
   user-select: auto !important;
   width: 100%;
-  height: ${props =>
+  height: ${(props) =>
     props.scrollDirection === 'none'
       ? theme.headerHeight
       : theme.headerScrollHeight};
-  box-shadow: ${props =>
+  box-shadow: ${(props) =>
     props.scrollDirection === 'up'
       ? `0 2px 4px ${theme.colors.shadowNavy}`
       : 'none'};
   transform: translateY(
-    ${props =>
+    ${(props) =>
       props.scrollDirection === 'down' ? `-${theme.headerScrollHeight}` : '0px'}
   );
   ${media.desktop`padding: 0 40px;`};
@@ -279,10 +279,10 @@ const HamburgerInner = styled.div`
   right: 0;
   transition-duration: 0.22s;
   transition-property: transform;
-  transition-delay: ${props => (props.menuOpen ? `0.12s` : `0s`)};
-  transform: rotate(${props => (props.menuOpen ? `225deg` : `0deg`)});
+  transition-delay: ${(props) => (props.menuOpen ? `0.12s` : `0s`)};
+  transform: rotate(${(props) => (props.menuOpen ? `225deg` : `0deg`)});
   transition-timing-function: cubic-bezier(
-    ${props =>
+    ${(props) =>
       props.menuOpen ? `0.215, 0.61, 0.355, 1` : `0.55, 0.055, 0.675, 0.19`}
   );
   &:before,
@@ -301,17 +301,17 @@ const HamburgerInner = styled.div`
     border-radius: 4px;
   }
   &:before {
-    width: ${props => (props.menuOpen ? `100%` : `120%`)};
-    top: ${props => (props.menuOpen ? `0` : `-10px`)};
-    opacity: ${props => (props.menuOpen ? 0 : 1)};
-    transition: ${props =>
+    width: ${(props) => (props.menuOpen ? `100%` : `120%`)};
+    top: ${(props) => (props.menuOpen ? `0` : `-10px`)};
+    opacity: ${(props) => (props.menuOpen ? 0 : 1)};
+    transition: ${(props) =>
       props.menuOpen ? theme.hamBeforeActive : theme.hamBefore};
   }
   &:after {
-    width: ${props => (props.menuOpen ? `100%` : `80%`)};
-    bottom: ${props => (props.menuOpen ? `0` : `-10px`)};
-    transform: rotate(${props => (props.menuOpen ? `-90deg` : `0`)});
-    transition: ${props =>
+    width: ${(props) => (props.menuOpen ? `100%` : `80%`)};
+    bottom: ${(props) => (props.menuOpen ? `0` : `-10px`)};
+    transform: rotate(${(props) => (props.menuOpen ? `-90deg` : `0`)});
+    transition: ${(props) =>
       props.menuOpen ? theme.hamAfterActive : theme.hamAfter};
   }
 `

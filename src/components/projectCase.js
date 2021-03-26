@@ -26,7 +26,7 @@ class ProjectCase extends Component {
 
   componentDidMount() {
     ScrollReveal().reveal(this.projectCase, srConfig())
-    this.revealRefs.forEach(ref => ScrollReveal().reveal(ref, srConfig()))
+    this.revealRefs.forEach((ref) => ScrollReveal().reveal(ref, srConfig()))
   }
 
   render() {
@@ -34,7 +34,7 @@ class ProjectCase extends Component {
 
     return (
       <FeaturedContainer id="projectCase">
-        <Heading ref={el => (this.projectCase = el)}>
+        <Heading ref={(el) => (this.projectCase = el)}>
           Some cool stuff I have Built
         </Heading>
         <FeaturedGrid>
@@ -52,7 +52,7 @@ class ProjectCase extends Component {
               } = frontmatter
 
               return (
-                <Project key={i} ref={el => (this.revealRefs[i] = el)}>
+                <Project key={i} ref={(el) => (this.revealRefs[i] = el)}>
                   <ContentContainer>
                     <ProjectName>
                       {external ? (

@@ -21,16 +21,16 @@ class Job extends Component {
     ScrollReveal().reveal(this.jobs, srConfig())
   }
 
-  isActive = id => this.state.activeTabId === id
+  isActive = (id) => this.state.activeTabId === id
 
-  setActiveTab = activeTabId => this.setState({ activeTabId })
+  setActiveTab = (activeTabId) => this.setState({ activeTabId })
 
   render() {
     const { activeTabId } = this.state
     const { data } = this.props
 
     return (
-      <JobsContainer id="jobs" ref={el => (this.jobs = el)}>
+      <JobsContainer id="jobs" ref={(el) => (this.jobs = el)}>
         <Heading>Where I have worked</Heading>
         <TabsContainer>
           <Tabs role="tablist">
@@ -41,7 +41,7 @@ class Job extends Component {
                   <Tab
                     key={i}
                     isActive={this.isActive(i)}
-                    onClick={e => this.setActiveTab(i, e)}
+                    onClick={(e) => this.setActiveTab(i, e)}
                     role="tab"
                     aria-selected={this.isActive(i) ? 'true' : 'false'}
                     aria-controls={`tab${i}`}
@@ -134,7 +134,7 @@ const Tab = styled.button`
   white-space: nowrap;
   font-family: ${theme.fonts.SFMono};
   font-size: ${theme.fontSizes.medium};
-  color: ${props =>
+  color: ${(props) =>
     props.isActive ? theme.colors.green : theme.colors.lightGrey};
   ${media.tablet`padding: 0 15px 2px;`};
   ${media.thone`
@@ -163,7 +163,7 @@ const Highlighter = styled.span`
   transition-delay: 0.1s;
   z-index: 10;
   transform: translateY(
-    ${props =>
+    ${(props) =>
       props.activeTabId > 0 ? props.activeTabId * theme.tabHeight : 0}px
   );
   ${media.thone`
@@ -173,7 +173,7 @@ const Highlighter = styled.span`
     top: auto;
     bottom: 0;
     transform: translateX(
-      ${props =>
+      ${(props) =>
         props.activeTabId > 0 ? props.activeTabId * theme.tabWidth : 0}px
     );
   `};
@@ -191,12 +191,12 @@ const TabContent = styled.div`
   left: 0;
   width: 100%;
   height: auto;
-  opacity: ${props => (props.isActive ? 1 : 0)};
-  z-index: ${props => (props.isActive ? 2 : -1)};
-  position: ${props => (props.isActive ? 'relative' : 'absolute')};
-  visibility: ${props => (props.isActive ? 'visible' : 'hidden')};
+  opacity: ${(props) => (props.isActive ? 1 : 0)};
+  z-index: ${(props) => (props.isActive ? 2 : -1)};
+  position: ${(props) => (props.isActive ? 'relative' : 'absolute')};
+  visibility: ${(props) => (props.isActive ? 'visible' : 'hidden')};
   transition: ${theme.transition};
-  transition-duration: ${props => (props.isActive ? '0.5s' : '0s')};
+  transition-duration: ${(props) => (props.isActive ? '0.5s' : '0s')};
   ul {
     padding: 0;
     margin: 0;
