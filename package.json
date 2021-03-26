@@ -17,7 +17,8 @@
     "test:coverage:watch": "yarn test -- --coverage --watchAll",
     "lint": "eslint \"src/**/*.js\"",
     "lh": "lighthousebot",
-    "precommit": "yarn lint"
+    "precommit": "yarn lint",
+    "prepare": "husky install"
   },
   "repository": {
     "type": "git",
