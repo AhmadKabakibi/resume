@@ -23,6 +23,7 @@ class Layout extends Component {
   state = {
     isLoading: true,
   }
+
   finishLoading = () => this.setState({ isLoading: false })
 
   render() {
