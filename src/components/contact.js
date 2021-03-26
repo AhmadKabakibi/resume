@@ -23,7 +23,7 @@ class Contact extends Component {
     const { title } = frontmatter
 
     return (
-      <ContactContainer id="contact" ref={el => (this.contact = el)}>
+      <ContactContainer id="contact" ref={(el) => (this.contact = el)}>
         <Title>{title}</Title>
         <p dangerouslySetInnerHTML={{ __html: html }} />
         <EmailLink

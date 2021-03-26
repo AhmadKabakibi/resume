@@ -24,7 +24,7 @@ class About extends Component {
     const { title, skills, avatar } = frontmatter
 
     return (
-      <AboutContainer id="about" ref={el => (this.about = el)}>
+      <AboutContainer id="about" ref={(el) => (this.about = el)}>
         <Heading>{title}</Heading>
         <FlexContainer>
           <ContentContainer>
