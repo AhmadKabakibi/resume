@@ -8268,19 +8268,19 @@ gatsby-transformer-remark@3.1.0:
     unist-util-select "^1.5.0"
     unist-util-visit "^1.4.1"
 
-gatsby-transformer-sharp@^3.1.0:
-  version "3.1.0"
-  resolved "https://registry.npmjs.org/gatsby-transformer-sharp/-/gatsby-transformer-sharp-3.1.0.tgz#958318785828302ef195a071bfb71071c94028be"
-  integrity sha512-wj7KFhbqkxT5Ff5R8RDpBz5DweR6frLyIX28n4ryGIqMkgkmEwkIfWcA4/JjocDm4dVwkXKmlwJA1jufkGEpCg==
+gatsby-transformer-sharp@^3.10.0:
+  version "3.10.0"
+  resolved "https://registry.yarnpkg.com/gatsby-transformer-sharp/-/gatsby-transformer-sharp-3.10.0.tgz#533eb06475785997712b4fdc95cce40c0fd27776"
+  integrity sha512-QmzQST+PTHAkl5X2owPxPoOwiwlZBYdKKCZ7Nn8ANS8BUAxHlfpBGCUY5Y9/GDDAytGAmYE0C7sgWhUvvi5I3A==
   dependencies:
-    "@babel/runtime" "^7.12.5"
+    "@babel/runtime" "^7.14.6"
     bluebird "^3.7.2"
     common-tags "^1.8.0"
     fs-extra "^9.1.0"
     potrace "^2.1.8"
     probe-image-size "^6.0.0"
     semver "^7.3.4"
-    sharp "^0.27.0"
+    sharp "^0.28.3"
 
 gatsby@^3.1.2:
   version "3.1.2"
