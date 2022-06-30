@@ -71,7 +71,7 @@
     "eslint-plugin-standard": "5.0.0",
     "gatsby-cli": "^4.4.0",
     "husky": "^7.0.1",
-    "jest": "27.4.5",
+    "jest": "28.1.2",
     "lighthousebot": "git+https://github.com/ebidel/lighthousebot.git",
     "prettier": "2.5.1"
   }
