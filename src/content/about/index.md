@@ -2,17 +2,16 @@
 title: 'Intro'
 avatar: './head_img.jpg'
 skills:
-  - Typescript
+  - Typescript & Storybook
   - NodeJS
   - Javascript
-  - storybook
   - AWS/Terraform/GCloud
   - Microservices Architecture
   - React
   - AI
 ---
 
-Hey, I am Ahmad Kabakibi. I am a senior software engineer, 29 years old and specialized in Full-stack web and mobile development. I have over 8 years experience with testing, prototyping, developer tooling, CI/CD, version control and awesome tech skills.<br>
+Hey, I am Ahmad Kabakibi. I am a senior software engineer, 30 years old and specialized in Full-stack web and mobile development. I have over 9 years experience with testing, prototyping, developer tooling, CI/CD, version control and awesome tech skills.<br>
 
 My latest experiences include React and Typescript and its ecosystem (testing library, saga, redux, storybook, cypress, jest) and microservices architecture, hybrid mobile development, clean code, and design patterns.<br>
 
